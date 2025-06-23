@@ -5,121 +5,340 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Naturopatia Tibetana com Sérgio Carvalho</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .list-group-item a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: bold;
+      text-transform: uppercase;
+      display: block;
+    }
+	#backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      display: none;
+      background-color: #198754;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    #backToTop:hover {
+      background-color: #145c32;
+    }
+  </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">Naturopatia Tibetana</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="treatments.html">Terapias</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">Conheça-nos</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<a class="navbar-brand" href="#">Naturopatia Tibetana</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+					<li class="nav-item"><a class="nav-link" href="treatments.html">Terapias</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
  <header class="bg-success text-white text-center py-5">
     <div class="container">
-      <h1 class="display-4">Our Treatments</h1>
-      <p class="lead">Natural solutions tailored to your unique needs</p>
+      <h1 class="display-4">As terapias</h1>
+      <p class="lead">Soluções naturais adaptadas às suas necessidades únicas</p>
     </div>
   </header>
   
- <section class="container my-5">
-    <div class="row align-items-start">
-      <div class="col-md-6">
-        <div class="row g-2">
-          <div class="col-6">
-            <img src="images/herbs.jpg" alt="Herbal Medicine" class="img-fluid rounded">
-          </div>
-          <div class="col-6">
-            <img src="images/nutrition.jpg" alt="Nutrition" class="img-fluid rounded">
-          </div>
-          <div class="col-6">
-            <img src="images/detox.jpg" alt="Detox" class="img-fluid rounded">
-          </div>
-          <div class="col-6">
-            <img src="images/meditation.jpg" alt="Meditation" class="img-fluid rounded">
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <h2 class="mb-4">Treatments Offered</h2>
-        <ul class="list-group">
-          <li class="list-group-item">Herbal Medicine</li>
-          <li class="list-group-item">Nutritional Guidance</li>
-          <li class="list-group-item">Holistic Detox</li>
-          <li class="list-group-item">Mind-Body Practices</li>
-          <li class="list-group-item">Energy Balancing</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+	<section class="container my-5">
+		<div class="row align-items-start">
+		<!-- Image collage -->
+			<div class="col-md-6">
+				<div class="row g-2">
+					<div class="col-4"><a href="#ku-nye"><img src="images/ku-nye.jpg" class="img-fluid rounded" alt="Ku Nye"></a></div>
+					<div class="col-4"><a href="#do-nye"><img src="images/do-nye.jpg" class="img-fluid rounded" alt="Do Nye"></a></div>
+					<div class="col-4"><a href="#yukcho"><img src="images/yukcho.jpg" class="img-fluid rounded" alt="Yukchö"></a></div>
+					<div class="col-4"><a href="#thurce"><img src="images/thurce.jpg" class="img-fluid rounded" alt="Thurce"></a></div>
+					<div class="col-4"><a href="#moxa"><img src="images/moxa.jpg" class="img-fluid rounded" alt="Me Tza"></a></div>
+					<div class="col-4"><a href="#me-bum"><img src="images/me-bum.jpg" class="img-fluid rounded" alt="Me Bum"></a></div>
+					<div class="col-4"><a href="#chu-lum"><img src="images/chu-lum.jpg" class="img-fluid rounded" alt="Chu Lum"></a></div>
+					<div class="col-4"><a href="#compressas"><img src="images/compressas.jpg" class="img-fluid rounded" alt="Compressas"></a></div>
+					<div class="col-4"><a href="#dieta-nutricao"><img src="images/dieta-nutricao.jpg" class="img-fluid rounded" alt="Dieta, Nutrição e Comportamento"></a></div>
+					<div class="col-4"><a href="#grupo-sanguineo"><img src="images/grupo-sanguineo.jpg" class="img-fluid rounded" alt="Grupo Sanguíneo"></a></div>
+					<div class="col-4"><a href="#auriculoterapia"><img src="images/auriculoterapia.jpg" class="img-fluid rounded" alt="Auriculoterapia"></a></div>
+					<div class="col-4"><a href="#iridologia"><img src="images/iridologia.jpg" class="img-fluid rounded" alt="Iridologia"></a></div>
+				</div>
+			</div>
+
+			<!-- Treatments list -->
+			<div class="col-md-6">
+				<h2 class="mb-4">Tratamentos Disponíveis</h2>
+				<ul class="list-group">
+				  <li class="list-group-item"><a href="#ku-nye">Massagem Ku Nye</a></li>
+				  <li class="list-group-item"><a href="#do-nye">Massagem Do Nye</a></li>
+				  <li class="list-group-item"><a href="#yukcho">Massagem com Bastonete (Yukchö)</a></li>
+				  <li class="list-group-item"><a href="#thurce">Acupuntura Tibetana (Thurce)</a></li>
+				  <li class="list-group-item"><a href="#moxa">Moxabustão Tibetana (Me Tza)</a></li>
+				  <li class="list-group-item"><a href="#me-bum">Ventosas Tibetanas (Me Bum)</a></li>
+				  <li class="list-group-item"><a href="#chu-lum">Balneoterapia (Chu Lum)</a></li>
+				  <li class="list-group-item"><a href="#compressas">Compressas Terapêuticas</a></li>
+				  <li class="list-group-item"><a href="#dieta-nutricao">Dieta, Nutrição e Comportamento</a></li>
+				  <li class="list-group-item"><a href="#grupo-sanguineo">Dieta do Grupo Sanguíneo</a></li>
+				  <li class="list-group-item"><a href="#auriculoterapia">Auriculoterapia</a></li>
+				  <li class="list-group-item"><a href="#iridologia">Iridologia</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
 
   <main class="container my-5">
-    <div class="row align-items-center mb-5">
-      <div class="col-md-6">
-        <h2>Herbal Medicine</h2>
-        <p>Personalized herbal remedies to support the body’s natural healing processes, rooted in Tibetan traditions.</p>
-      </div>
-      <div class="col-md-6">
-        <img src="images/herbs.jpg" alt="Herbal Medicine" class="img-fluid rounded shadow">
-      </div>
+    <div class="row align-items-center mb-5" id="ku-nye">
+		<div class="col-md-6">
+			<h2>KU NYE - MASSAGEM TRADICIONAL TIBETANA</h2>
+			<p>Os benefícios e as funções rejuvenescedoras e restauradoras do Ku Nye são mencionados em diversos textos tradicionais tibetanos. Entre os principais efeitos desta terapia estão:</p>
+			<ul>
+			  <li>eliminação de toxinas acumuladas no corpo,</li>
+			  <li>aumento da vitalidade,</li>
+			  <li>redução e alívio de vários tipos de dores e síndromes</li>
+			  <li>relaxamento em casos de distúrbios nervosos, como:</li>
+			  <ul>
+				<li>insônia</li>
+				<li>depressão</li>
+				<li>ansiedade</li>
+			  </ul>
+			</ul>
+		</div>
+		<div class="col-md-6">
+			<img src="images/ku-nye.jpg" alt="Massagem Ku Nye" class="img-fluid rounded shadow">
+		</div>
+	</div>
+
+    <div class="row align-items-center mb-5" id="do-nye">
+		<div class="col-md-6 order-md-2">
+			<h2>DO NYE – MASSAGEM COM PEDRAS E CONCHAS</h2>
+			<p>Esta terapia externa utiliza pedras provenientes de rios, lagos ou do mar, pois as pedras polidas pela ação da água não são ásperas nem pontiagudas, tendo geralmente formas arredondadas, ovais ou alongadas.</p>
+			<p>As pedras arredondadas e ovais são usadas para trabalhar os músculos, enquanto as pedras alongadas são aplicadas nos pontos críticos para realizar digito-pressão.</p>
+			<p>Na tradição da Medicina Tibetana, também são frequentemente utilizadas ágatas, cristais e diferentes tipos de conchas:</p>
+			<ul>
+				<li>Ágatas e cristais são usados para tratar distúrbios da bílis, infecções e dores agudas.</li>
+				<li>Conchas são aplicadas nos meridianos e em tratamentos de problemas neurológicos, como a ciática.</li>
+			</ul>
+		</div>
+		<div class="col-md-6 order-md-1">
+			<img src="images/do-nye.jpg" alt="Do Nye – Massagem com Pedras e Conchas" class="img-fluid rounded shadow">
+		</div>
+	</div>
+
+    <div class="row align-items-center mb-5" id="yukcho">
+		<div class="col-md-6">
+			<h2>YUKCHÖ – MASSAGEM COM O BASTONETE</h2>
+			<p>A massagem com bastonete é indicada especialmente para distúrbios nervosos que, por vezes, podem surgir mesmo com práticas como meditação ou exercícios espirituais intensos.</p>
+			<p>O tratamento com o bastonete oferece um efeito mais profundo e intenso do que a digito-pressão. As vibrações geradas pelo bastonete ajudam a concentrar as desordens no ponto tratado, expulsando-as para fora do corpo — conceito semelhante ao da sangria terapêutica tibetana.</p>
+			<p>É recomendado para aliviar sintomas como:</p>
+			<ul>
+				<li>Dores de cabeça e desequilíbrios de humor (Vento) manifestados na cabeça</li>
+				<li>Pescoço rígido ou curvado (torcicolo)</li>
+				<li>Rigidez ou paralisia nos membros</li>
+				<li>Tristeza ou melancolia</li>
+				<li>Dores agudas nas costas</li>
+				<li>Sensação de aperto no peito</li>
+				<li>Flatulência</li>
+				<li>Problemas no diafragma</li>
+			</ul>
+			<p>Estes são apenas alguns dos sintomas que podem ser aliviados com a técnica de Yukchö.</p>
+		</div>
+		<div class="col-md-6">
+			<img src="images/yukcho.jpg" alt="Yukchö – Massagem com o Bastonete" class="img-fluid rounded shadow">
+		</div>
     </div>
 
-    <div class="row align-items-center mb-5">
-      <div class="col-md-6 order-md-2">
-        <h2>Nutritional Guidance</h2>
-        <p>Advice on diet and lifestyle inspired by Tibetan nutritional principles, aiming to restore balance and inner vitality.</p>
-      </div>
-      <div class="col-md-6 order-md-1">
-        <img src="images/nutrition.jpg" alt="Nutrition" class="img-fluid rounded shadow">
-      </div>
+    <div class="row align-items-center mb-5" id="thurce">
+		<div class="col-md-6 order-md-2">
+			<h2>THURCE – ACUPUNTURA TIBETANA</h2>
+			<p>A acupuntura tibetana visa concentrar e liberar o calor e as energias negativas acumuladas no corpo. Além disso, é possível aplicar estímulos térmicos nos pontos: calor (com moxa sobre a agulha) ou frio (com agulha resfriada).</p>
+			<p>É importante destacar que os pontos utilizados na medicina tibetana diferem daqueles da acupuntura chinesa tradicional, que seguem os meridianos. Na tradição tibetana, aplica-se a acupuntura em uma “área sombra” — uma região associada à energia de um órgão — para estimular sua função energética.</p>
+			<p>A acupuntura tibetana é uma prática benéfica para todas as pessoas, promovendo equilíbrio e vitalidade.</p>
+		</div>
+		<div class="col-md-6 order-md-1">
+			<img src="images/thurce.jpg" alt="Thurce – Acupuntura Tibetana" class="img-fluid rounded shadow">
+		</div>
     </div>
 
-    <div class="row align-items-center mb-5">
-      <div class="col-md-6">
-        <h2>Holistic Detox</h2>
-        <p>Gentle detoxification plans that align with your body's natural cycles, emphasizing purification and renewal.</p>
-      </div>
-      <div class="col-md-6">
-        <img src="images/detox.jpg" alt="Detox" class="img-fluid rounded shadow">
-      </div>
+    <div class="row align-items-center mb-5" id="moxa">
+		<div class="col-md-6">
+			<h2>ME TZA – MOXABUSTÃO TIBETANA (MOXA)</h2>
+			<p>A ação terapêutica da moxa é promovida pelo calor gerado pela queima da Artemísia, uma planta medicinal que, ao aquecer pontos específicos do corpo, alivia dores, estimula a circulação harmoniosa de sangue e energia, e elimina bloqueios energéticos.</p>
+			<p>Aplicada sobre pontos específicos da Medicina Tradicional Tibetana (MTT), a moxa aquece os pontos do humor Vento e do sangue, ajudando a reequilibrar a energia e tratar distúrbios dos órgãos internos.</p>
+			<p>Alguns dos efeitos terapêuticos mais comuns incluem:</p>
+			<ul>
+				<li>Má digestão</li>
+				<li>Inchaço causado por Fleuma</li>
+				<li>Dores nos membros</li>
+				<li>Rigidez dos tendões e dificuldade de movimento devido ao Vento</li>
+				<li>Acúmulo excessivo de líquidos</li>
+				<li>Distúrbios mentais e emocionais ligados ao desequilíbrio do Vento (como tristeza, depressão, perda de memória)</li>
+				<li>Abscessos</li>
+				<li>Problemas neurológicos diversos (ex: nevralgias, ciática)</li>
+				<li>Artrite</li>
+				<li>Outros</li>
+			</ul>
+		</div>
+		<div class="col-md-6">
+			<img src="images/moxa.jpg" alt="Me Tza – Moxabustão Tibetana" class="img-fluid rounded shadow">
+		</div>
     </div>
+	
+	<div class="row align-items-center mb-5" id="me-bum">
+		<div class="col-md-6 order-md-2">
+			<h2>ME BUM – VENTOSAS TIBETANAS (VASO DE FOGO)</h2>
+			<p>Conhecida como “a terapia com o vaso de néctar do Buda”, a técnica das ventosas utiliza tradicionalmente recipientes de cobre, valorizados por sua capacidade de absorver energias negativas. Metais como prata e bronze também possuem propriedades semelhantes. Hoje em dia, a ventosa de vidro é amplamente utilizada.</p>
+			<p>As ventosas são aplicadas quando é necessário expulsar do corpo o excesso de Vento, Bílis ou Fleuma acumulados em uma área específica, promovendo a circulação harmoniosa das energias.</p>
+			<p>As principais indicações incluem:</p>
+			<ul>
+				<li>Rigidez e tensão nos músculos do pescoço e trapézios</li>
+				<li>Tosse e crises de asma</li>
+				<li>Espasmos do diafragma e soluços</li>
+				<li>Dores intercostais</li>
+				<li>Meteorismo, dores menstruais e diarreia</li>
+				<li>Ciática</li>
+				<li>Dores agudas na parte superior das costas causadas por disfunções do sangue ou do humor Vento</li>
+				<li>Distúrbios combinados de sangue e Vento manifestados na parte superior do corpo</li>
+				<li>Bloqueios energéticos na parte superior do corpo</li>
+				<li>Distorção da anca</li>
+				<li>Dores opressivas no peito</li>
+				<li>Problemas respiratórios e hiperventilação</li>
+			</ul>
+		</div>
+		<div class="col-md-6 order-md-1">
+			<img src="images/me-bum.jpg" alt="Me Bum – Ventosas Tibetanas" class="img-fluid rounded shadow">
+		</div>
+	</div>
 
-    <div class="row align-items-center mb-5">
-      <div class="col-md-6 order-md-2">
-        <h2>Mind-Body Practices</h2>
-        <p>Incorporating meditative techniques, breathwork, and movement to foster inner harmony and resilience.</p>
-      </div>
-      <div class="col-md-6 order-md-1">
-        <img src="images/meditation.jpg" alt="Mind-Body Practices" class="img-fluid rounded shadow">
-      </div>
-    </div>
+	<div class="row align-items-center mb-5" id="chu-lum">
+		<div class="col-md-6">
+		<h2>CHU LUM – BALNEOTERAPIA TIBETANA</h2>
+		<p>Esta terapia está diretamente relacionada com o elemento água. Pode-se utilizar água naturalmente rica em propriedades terapêuticas (como águas termais), ou água na qual foram fervidas ervas medicinais, podendo ser aplicada tanto em forma líquida quanto em forma de vapor.</p>
+		<p>As águas terapêuticas classificam-se em dois tipos:</p>
+		<ul>
+			<li><strong>Águas termais:</strong> com propriedades naturais de cura</li>
+			<li><strong>Águas com ervas:</strong> preparadas com plantas medicinais tibetanas conhecidas como “Os Cinco Néctares” – <em>Dul Tsi Nga Lum</em> (néctar – cinco – água)</li>
+		</ul>
+		<p>Os banhos medicinais na medicina tibetana são tradicionalmente preparados com estas cinco flores medicinais. Elas têm a capacidade de fortalecer o corpo e equilibrar as energias, sendo recomendadas tanto para pessoas doentes quanto para indivíduos saudáveis, como forma de prevenção e revitalização.</p>
+		</div>
+		<div class="col-md-6">
+			<img src="images/chu-lum.jpg" alt="Chu Lum – Balneoterapia Tibetana" class="img-fluid rounded shadow">
+		</div>
+	</div>
 
-    <div class="row align-items-center mb-5">
-      <div class="col-md-6">
-        <h2>Energy Balancing</h2>
-        <p>Traditional Tibetan acupressure and subtle energy work to balance internal flow and relieve tension.</p>
-      </div>
-      <div class="col-md-6">
-        <img src="images/energy.jpg" alt="Energy Healing" class="img-fluid rounded shadow">
-      </div>
-    </div>
-  </main>
+	<div class="row align-items-center mb-5" id="compressas">
+		<div class="col-md-6 order-md-2">
+			<h2>COMPRESSAS TERAPÊUTICAS</h2>
+			<p>As compressas, preparadas com ingredientes medicinais, sais ou pedras, são aplicadas sobre pontos específicos do corpo. Esta forma de terapia é frequentemente utilizada para potencializar os efeitos da massagem <em>Ku Nye</em>.</p>
+			<p>Aplicadas diretamente sobre áreas dolorosas, as compressas podem proporcionar alívio imediato. A temperatura (quente ou fria) e os ingredientes utilizados variam de acordo com a natureza do problema a ser tratado.</p>
 
-  <footer class="bg-light text-center py-4">
-    <div class="container">
-      <p class="mb-0">&copy; 2025 Naturopatia Tibetana com Sérgio Carvalho</p>
-    </div>
-  </footer>
+			<h5>Compressas Frias</h5>
+			<p>Feitas com materiais de natureza fria, como metais, ágata ou pedras de rio. Indicadas para:</p>
+			<ul>
+				<li>Febres causadas por traumas</li>
+				<li>Dores agudas provocadas por febre agravada por alimentação e hábitos inadequados</li>
+				<li>Febres crônicas e febres generalizadas pelo corpo</li>
+				<li>Febres causadas por ingestão de carne estragada</li>
+				<li>Dores intestinais agudas</li>
+				<li>Excesso de calor no fígado e excesso de bílis</li>
+				<li>Dor de cabeça e mal-estar após consumo de álcool</li>
+			</ul>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+			<h5>Compressas Quentes</h5>
+			<p>Utilizadas para:</p>
+			<ul>
+				<li>Dores musculares causadas pelo frio</li>
+				<li>Asma e dificuldades respiratórias</li>
+				<li>Má digestão associada ao desequilíbrio de Vento e Fleuma</li>
+				<li>Problemas circulatórios causados por feridas</li>
+				<li>Problemas na circulação hepática</li>
+				<li>Bloqueios urinários</li>
+			</ul>
+		</div>
+		<div class="col-md-6 order-md-1">
+			<img src="images/compressas.jpg" alt="Compressas Terapêuticas Tibetanas" class="img-fluid rounded shadow">
+		</div>
+	</div>
+
+	<div class="row align-items-center mb-5" id="dieta-nutricao">
+		<div class="col-md-6">
+			<h2>Dieta, Nutrição e Comportamento</h2>
+			<p>Na Medicina Tradicional Tibetana (MTT), a alimentação e o comportamento diário são considerados pilares fundamentais para a manutenção da saúde e para a recuperação de desequilíbrios energéticos.</p>
+			<p>Cada pessoa possui uma constituição única (baseada nos humores Vento, Bílis e Fleuma), e, por isso, a alimentação deve ser personalizada de acordo com as necessidades energéticas do indivíduo, das estações do ano e do estágio da vida.</p>
+			<p>Além da dieta, recomenda-se também a moderação nas emoções, no sono, nas atividades físicas e nos hábitos sociais. O comportamento equilibrado é essencial para fortalecer a mente e o corpo, prevenindo doenças antes mesmo que elas se manifestem.</p>
+			<p>Este acompanhamento orienta a escolha dos alimentos, horários de refeição, combinações de sabores e práticas diárias que favoreçam o bem-estar físico, mental e espiritual.</p>
+		</div>
+		<div class="col-md-6">
+			<img src="images/dieta-nutricao.jpg" alt="Dieta, Nutrição e Comportamento" class="img-fluid rounded shadow">
+		</div>
+	</div>
+	
+	<div class="row align-items-center mb-5" id="grupo-sanguineo">
+		<div class="col-md-6 order-md-2">
+			<h2>Dieta do Grupo Sanguíneo</h2>
+			<p>A Dieta do Grupo Sanguíneo baseia-se na ideia de que cada grupo sanguíneo (A, B, AB e O) possui características metabólicas distintas e reage de forma diferente a certos alimentos. Este método propõe uma alimentação personalizada que respeita a bioindividualidade de cada pessoa.</p>
+			<p>Na abordagem integrativa, essa dieta pode ser combinada com os princípios da Medicina Tibetana, ajustando os alimentos não apenas conforme o grupo sanguíneo, mas também em harmonia com os humores do corpo (Vento, Bílis e Fleuma) e com os ciclos naturais.</p>
+			<p>Adotar uma dieta adaptada ao grupo sanguíneo pode ajudar na digestão, no controle de peso, na redução de inflamações e na melhoria da energia vital. Esta orientação é especialmente útil para quem busca um plano alimentar mais específico e equilibrado com suas predisposições genéticas e energéticas.</p>
+		</div>
+		<div class="col-md-6 order-md-1">
+			<img src="images/grupo-sanguineo.jpg" alt="Dieta do Grupo Sanguíneo" class="img-fluid rounded shadow">
+		</div>
+	</div>
+
+	<div class="row align-items-center mb-5" id="auriculoterapia">
+		<div class="col-md-6">
+			<h2>Auriculoterapia</h2>
+			<p>Auriculoterapia é uma técnica terapêutica que estimula pontos específicos da orelha para tratar desequilíbrios físicos, mentais e emocionais. Inspirada nas tradições orientais, essa prática considera a orelha como um microcosmo do corpo humano, onde cada ponto está ligado a um órgão ou função vital.</p>
+			<p>Na abordagem complementar tibetana, a auriculoterapia é utilizada como uma forma sutil de regulação energética, especialmente eficaz para aliviar tensões, dores crônicas, distúrbios do sono e desequilíbrios emocionais relacionados ao humor Vento.</p>
+			<p>São utilizados pequenos estímulos com agulhas finas, esferas magnéticas ou sementes, que permanecem na orelha por alguns dias. Essa técnica promove a autorregulação do organismo, sendo segura, não invasiva e altamente eficaz como apoio terapêutico.</p>
+		</div>
+		<div class="col-md-6">
+			<img src="images/auriculoterapia.jpg" alt="Auriculoterapia" class="img-fluid rounded shadow">
+		</div>
+	</div>
+
+	<div class="row align-items-center mb-5" id="iridologia">
+		<div class="col-md-6 order-md-2">
+			<h2>Iridologia</h2>
+			<p>A Iridologia é um método de diagnóstico natural que observa padrões, cores e marcas na íris — a parte colorida do olho — para avaliar o estado de saúde do indivíduo. Acredita-se que cada parte da íris reflete um órgão ou sistema do corpo, funcionando como um “mapa” da condição interna.</p>
+			<p>Combinada com os princípios da Medicina Tibetana, a iridologia auxilia na identificação de desequilíbrios energéticos ligados aos humores Vento, Bílis e Fleuma, permitindo um plano terapêutico mais preciso e personalizado.</p>
+			<p>Essa análise não substitui exames clínicos, mas é uma ferramenta valiosa para compreender tendências hereditárias, fraquezas constitucionais e áreas do corpo que necessitam de atenção preventiva ou tratamento natural.</p>
+		</div>
+		<div class="col-md-6 order-md-1">
+			<img src="images/iridologia.jpg" alt="Iridologia" class="img-fluid rounded shadow">
+		</div>
+	</div>
+
+</main>
+
+<button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+
+<footer class="bg-light text-center py-4">
+	<div class="container">
+		<p class="mb-0">&copy; 2025 Naturopatia Tibetana com Sérgio Carvalho</p>
+	</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      backToTop.style.display = window.scrollY > 300 ? 'flex' : 'none';
+    });
+</script>
 </body>
 </html>
