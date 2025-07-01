@@ -4,48 +4,45 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sobre | Naturopatia Tibetana com Sérgio Carvalho</title>
+	<meta name="description" content="Conheça Sérgio Carvalho, especialista em Naturopatia Tibetana. Descubra a sua missão, abordagem e formação em medicina natural e terapias holísticas para o seu bem-estar.">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-	<style>
-		#backToTop {
-		  position: fixed;
-		  bottom: 20px;
-		  right: 20px;
-		  z-index: 999;
-		  display: none;
-		  background-color: #198754;
-		  color: white;
-		  border: none;
-		  border-radius: 50%;
-		  width: 50px;
-		  height: 50px;
-		  font-size: 24px;
-		  align-items: center;
-		  justify-content: center;
-		  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-		}
-		#backToTop:hover {
-		  background-color: #145c32;
-		}
-		.col-md-6 p {
-		  text-align: justify;
-		}
-		.mb-5 p {
-		  text-align: justify;
-		}
-	</style>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sérgio Carvalho",
+      "jobTitle": "Naturopata Tibetana",
+      "description": "Praticante dedicado de medicina natural tibetana, com anos de experiência em terapias tradicionais. Oferece cuidados personalizados que respeitam a individualidade e o equilíbrio interior de cada paciente.",
+      "image": "https://talwar88.github.io/naturopatia/images/sergio.jpg",
+      "url": "https://talwar88.github.io/naturopatia/about.html",
+      "worksFor": {
+        "@type": "HealthAndBeautyBusiness",
+        "name": "Naturopatia Tibetana com Sérgio Carvalho"
+      },
+      "alumniOf": [
+        "Instituto Português de Naturologia (IPN)",
+        "Academia Internacional de Medicina Tradicional Tibetana",
+        "Associação Para a Medicina Tradicional Tibetana – Portugal",
+        "Men-Tsee-Khang - Tibetan Medical & Astro",
+        "Introdução à Simulação em Saúde (ISS) - FMUP"
+      ],
+      "knowsAbout": ["Naturopatia Tibetana", "Medicina Tradicional Tibetana", "Terapias Holísticas"]
+    }
+    </script>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container">
-			<a class="navbar-brand" href="#">Naturopatia Tibetana</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+			<a class="navbar-brand" href="index.html">Naturopatia Tibetana</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ms-auto">
-					<li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+					<li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
 					<li class="nav-item"><a class="nav-link" href="treatments.html">Terapias</a></li>
-					<li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
+					<li class="nav-item"><a class="nav-link active" href="about.html">Sobre</a></li>
 					<li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
 				</ul>
 			</div>
@@ -54,7 +51,7 @@
 
   <header class="bg-success text-white text-center py-5">
     <div class="container">
-      <h1 class="display-4">Sobre o Sergio Carvalho</h1>
+      <h1 class="display-4">Sobre o Sérgio Carvalho</h1>
       <p class="lead">Uma abordagem compassiva e holística para a saúde e o bem-estar</p>
     </div>
   </header>
@@ -67,13 +64,13 @@
 </p>
 		</div>
 		<div class="col-md-6">
-			<img src="images/sergio.jpg" alt="Sergio De Carvalho" class="img-fluid rounded shadow">
+			<img src="images/sergio.jpg" alt="Sergio De Carvalho" class="img-fluid rounded shadow" loading="lazy">
 		</div>
 	</div>
 	
 	<div class="row align-items-center mb-5">
       <h3>Missão</h3>
-      <p>Guiar os pacientes em sua jornada de bem-estar físico, emocional e espiritual por meio de práticas naturais e personalizadas. O Sergio Carvalho acredita que a verdadeira cura vem de dentro e busca capacitar seus pacientes a redescobrirem sua harmonia natural.</p>
+      <p>Guiar os pacientes em sua jornada de bem-estar físico, emocional e espiritual por meio de práticas naturais e personalizadas. O Sérgio Carvalho acredita que a verdadeira cura vem de dentro e busca capacitar seus pacientes a redescobrirem sua harmonia natural.</p>
     </div>
 	
 	<div class="row align-items-center mb-5">
@@ -93,7 +90,7 @@
     </div>
   </main>
     
-<button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+<button id="backToTop">↑</button>
 
 <footer class="bg-light text-center py-4">
 	<div class="container">
@@ -102,11 +99,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    const backToTop = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-      backToTop.style.display = window.scrollY > 300 ? 'flex' : 'none';
-    });
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>
