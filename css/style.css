@@ -1,1 +1,42 @@
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  display: none; /* JS will control this */
+  background-color: #198754;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center; /* These work if JS sets display: flex */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-align: center; /* Fallback for centering if not flex */
+}
 
+#backToTop:hover,
+#backToTop:focus {
+  background-color: #145c32;
+  /* outline: 2px solid blue; /* Example: If a more prominent focus ring is desired */
+}
+
+/* Styles for the treatments list on treatments.html */
+/* To scope this rule as it was in treatments.html <style>, we can use a parent class on the body or main container of that page */
+.page-treatments .list-group-item a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+}
+
+/* If text justification is truly desired in specific sections, create and apply this class: */
+/* For example: <div class="text-justify-custom"><p>...</p></div> */
+.text-justify-custom p, p.text-justify-custom {
+  text-align: justify;
+  hyphens: auto; /* Optional: for better justification */
+}
+/* All other text will default to left-aligned (browser default or Bootstrap's default) */
