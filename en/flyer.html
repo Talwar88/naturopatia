@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flyer - Medicina Natural</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfaf5;
+      color: #333;
+    }
+    .flyer {
+      width: 148mm;
+      height: 210mm;
+      padding: 20mm;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid #ccc;
+    }
+    .header {
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 1.6em;
+      margin-bottom: 0;
+      color: #6c4c3b;
+    }
+    .header p {
+      font-style: italic;
+      font-size: 1em;
+      margin-top: 0.2em;
+    }
+    .hero {
+      background: url('nature-path.jpg') center/cover no-repeat;
+      height: 120mm;
+      border-radius: 8px;
+      margin: 20px 0;
+      position: relative;
+    }
+    .hero-text {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: rgba(255,255,255,0.8);
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 0.9em;
+    }
+    .cta {
+      text-align: center;
+    }
+    .cta p {
+      margin-bottom: 10px;
+    }
+    .qr {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .qr img {
+      width: 100px;
+      height: 100px;
+    }
+    .back {
+      page-break-before: always;
+      padding: 20mm;
+      box-sizing: border-box;
+      background: #fff;
+    }
+    .intro, .treatments, .contact {
+      margin-bottom: 20px;
+    }
+    .treatments ul {
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      padding-left: 20px;
+    }
+    h2 {
+      color: #6c4c3b;
+    }
+  </style>
+</head>
+<body>
+  <div class="flyer">
+    <div class="header">
+      <h1>Medicina Natural com a Dra. Sofia</h1>
+      <p>A sua jornada para o equilíbrio e bem-estar começa aqui</p>
+    </div>
+    <div class="hero">
+      <div class="hero-text">
+        Terapias Tibetanas | Abordagem Natural | Sabedoria Ancestral
+      </div>
+    </div>
+    <div class="cta">
+      <p>Descubra os tratamentos disponíveis e agende a sua consulta.</p>
+      <p><strong>Escaneie o QR Code para visitar o site.</strong></p>
+    </div>
+    <div class="qr">
+      <img src="qrcode.png" alt="QR Code para o site">
+    </div>
+  </div>
+
+  <div class="back">
+    <div class="intro">
+      <h2>O que oferecemos</h2>
+      <p>A Medicina Tradicional Tibetana combina terapias naturais, massagens, dietas personalizadas e técnicas energéticas para restaurar o equilíbrio do corpo e da mente.</p>
+    </div>
+    <div class="treatments">
+      <h2>Tratamentos Disponíveis</h2>
+      <ul>
+        <li>Ku Nye – Massagem Tibetana</li>
+        <li>Do Nye – Pedras e Conchas</li>
+        <li>Yukchö – Bastonete Vibracional</li>
+        <li>Moxa – Moxabustão</li>
+        <li>Ventosas – Me Bum</li>
+        <li>Acupunctura Tibetana</li>
+        <li>Dieta e Nutrição</li>
+        <li>Grupo Sanguíneo</li>
+        <li>Compressas Terapêuticas</li>
+        <li>Auriculoterapia</li>
+        <li>Iridologia</li>
+        <li>Chu Lum – Balneoterapia</li>
+      </ul>
+    </div>
+    <div class="contact">
+      <h2>Contato</h2>
+      <p><strong>Email:</strong> sofia@exemplo.com</p>
+      <p><strong>Telemóvel:</strong> +351 912 345 678</p>
+      <p><strong>Website:</strong> medicina-natural.github.io</p>
+    </div>
+  </div>
+</body>
+</html>
