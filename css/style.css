@@ -40,3 +40,10 @@
   hyphens: auto; /* Optional: for better justification */
 }
 /* All other text will default to left-aligned (browser default or Bootstrap's default) */
+
+.flag-icon {
+  width: 20px;       /* adjust to taste: 16–24px works well */
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}

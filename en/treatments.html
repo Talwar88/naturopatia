@@ -17,17 +17,21 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="treatments.html">Treatments</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+			<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+			<li class="nav-item"><a class="nav-link active" href="treatments.html">Treatments</a></li>
+			<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+			<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 
-          <!-- Lanugage Switcher -->
-          <li class="nav-item d-flex align-items-center ms-auto">
-            <a class="nav-link px-1" href="/"><strong>🇵🇹</strong></a>
-            <span class="text-muted">|</span>
-            <a class="nav-link px-1" href="/en/"><strong>🇬🇧</strong></a>
-          </li>
+		<!-- Lanugage Switcher -->
+			<li class="nav-item d-flex align-items-center ms-auto">
+				<a class="nav-link px-1 d-flex align-items-center" href="/" aria-label="Português">
+				<img src="../images/flag-pt.png" alt="Português" class="flag-icon" />
+				</a>
+				<span class="text-muted">|</span>
+				<a class="nav-link px-1 d-flex align-items-center" href="/en/" aria-label="English">
+				<img src="../images/flag-gb.png" alt="English" class="flag-icon" />
+				</a>
+			</li>
         </ul>
       </div>
 		</div>
@@ -45,6 +49,7 @@
 		<!-- Image collage -->
 			<div class="col-md-6">
 				<div class="row g-2">
+					<div class="col-4"><a href="#consulta"><img src="../images/consulta.jpg" class="img-fluid rounded" alt="Consulta" loading="lazy"></a></div>
 					<div class="col-4"><a href="#ku-nye"><img src="../images/ku-nye.jpg" class="img-fluid rounded" alt="Ku Nye" loading="lazy"></a></div>
 					<div class="col-4"><a href="#do-nye"><img src="../images/do-nye.jpg" class="img-fluid rounded" alt="Do Nye" loading="lazy"></a></div>
 					<div class="col-4"><a href="#yukcho"><img src="../images/yukcho.jpg" class="img-fluid rounded" alt="Yukchö" loading="lazy"></a></div>
@@ -64,24 +69,41 @@
 			<div class="col-md-6">
 			<h2 class="mb-4">Available Treatments</h2>
 			<ul class="list-group">
-				<li class="list-group-item"><a href="#ku-nye">Tibetan Massage - Ku Nye</a></li>
-				<li class="list-group-item"><a href="#do-nye">Stone and Shell Massage - Do Nye</a></li>
-				<li class="list-group-item"><a href="#yukcho">Massage with Stick (Yukchö)</a></li>
-				<li class="list-group-item"><a href="#thurce">Tibetan Acupuncture (Thurce)</a></li>
-				<li class="list-group-item"><a href="#moxa">Tibetan Moxibustion (Me Tza)</a></li>
-				<li class="list-group-item"><a href="#me-bum">Tibetan Cupping (Me Bum)</a></li>
-				<li class="list-group-item"><a href="#chu-lum">Balneotherapy (Chu Lum)</a></li>
-				<li class="list-group-item"><a href="#compressas">Therapeutic Compresses</a></li>
-				<li class="list-group-item"><a href="#dieta-nutricao">Diet, Nutrition and Behavior according to TTM</a></li>
-				<li class="list-group-item"><a href="#grupo-sanguineo">Blood Type Diet</a></li>
-				<li class="list-group-item"><a href="#auriculoterapia">Auriculotherapy</a></li>
-				<li class="list-group-item"><a href="#iridologia">Iridology</a></li>
+				<li class="list-group-item"><a href="#consulta">Consulta Naturopata Tibetana (Medicina Tradicional Tibetana) [1h]* </a></li>
+				<li class="list-group-item"><a href="#ku-nye">Tibetan Massage - Ku Nye [1h30]**</a></li>
+				<li class="list-group-item"><a href="#do-nye">Stone and Shell Massage - Do Nye [1h]**</a></li>
+				<li class="list-group-item"><a href="#yukcho">Massage with Stick (Yukchö) ***</a></li>
+				<li class="list-group-item"><a href="#thurce">Tibetan Acupuncture (Thurce) [1h]**</a></li>
+				<li class="list-group-item"><a href="#moxa">Tibetan Moxibustion (Me Tza) [1h]**</a></li>
+				<li class="list-group-item"><a href="#me-bum">Tibetan Cupping (Me Bum) [30min]**</a></li>
+				<li class="list-group-item"><a href="#chu-lum">Balneotherapy (Chu Lum) ***</a></a></li>
+				<li class="list-group-item"><a href="#compressas">Therapeutic Compresses ***</a></a></li>
+				<li class="list-group-item"><a href="#dieta-nutricao">Diet, Nutrition and Behavior according to TTM [1h]**</a></li>
+				<li class="list-group-item"><a href="#grupo-sanguineo">Blood Type Diet [1h]**</a></li>
+				<li class="list-group-item"><a href="#auriculoterapia">Auriculotherapy [1h]**</a></li>
+				<li class="list-group-item"><a href="#iridologia">Iridology **</a></li>
 				</ul>
 			</div>
 		</div>
+		<div class="row align-items-start">
+			<p class="mb-0"><small><strong>*</strong> Diagnosis & appropriate partial therapy</small></p>
+			<p class="mb-0"><small><strong>**</strong> Therapy only</small></p>
+			<p class="mb-0"><small><strong>***</strong> Therapy conditional on prior consultation</small></p>
+		</div>
+
 	</section>
 
   <main class="container my-5">
+	<div class="row align-items-center mb-5" id="Consulta">
+		<div class="col-md-6 order-md-2">
+			<h2>Tibetan Naturopathy Consultation (Traditional Tibetan Medicine)</h2>
+			<p>The diagnostic methods used include pulse assessment, urine analysis, palpation of various points on the body, and examination of the tongue and ears, among others.</p>
+		</div>
+		<div class="col-md-6 order-md-1">
+			<img src="../images/consulta.jpg" alt="Consultation" class="img-fluid rounded shadow" loading="lazy">
+		</div>
+	</div>
+
     <div class="row align-items-center mb-5" id="ku-nye">
 		<div class="col-md-6">
 			<h2>KU NYE – TRADITIONAL TIBETAN MASSAGE</h2>
